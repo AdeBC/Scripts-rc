@@ -1,25 +1,31 @@
 set ts=4
 set noexpandtab
+set mouse=a " 支持使用鼠标
 %retab!
-set nocompatible
-set number
+set nocompatible " 不与vi兼容
+set number " 显示行号
 filetype on
 set history=1000
-colorscheme monokai
-syntax on
-set autoindent
+colorscheme monokai " 设置主题
+syntax on " 打开语法高亮
+set autoindent " 自动缩进，按下回车保持缩进
 set smartindent
-set tabstop=4
+set softtabstop=4 " tab转换为4个空格
 set shiftwidth=4
-set showmatch
+set showmatch " 光标遇到括号时自动高亮显示另一半
 set guioptions-=T
 set vb t_vb=
-set ruler
+set ruler "在状态栏显示光标的当前位置
 set nohls
-set incsearch
+set incsearch " 输入搜索模式时，每输入一个字符，就自动跳到第一个匹配的结果
+set undofile " 保留编辑历史
 set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 set termencoding=utf-8
-set encoding=utf-8
+set encoding=utf-8 " 文件编码使用utf-8
+set backupdir=~/.vim/.backup// " 设置备份文件、交换文件、操作历史文件的保存路径  
+set directory=~/.vim/.swp//
+set undodir=~/.vim/.undo// 
+
 if has("vms")
 set nobackup
 else
