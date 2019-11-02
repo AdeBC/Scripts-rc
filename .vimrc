@@ -22,6 +22,8 @@ set undofile " 保留编辑历史
 set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 set termencoding=utf-8
 set encoding=utf-8 " 文件编码使用utf-8
+set paste # 粘贴模式
+set clipboard=unnamed # 使用系统剪贴板
 set backupdir=~/.vim/.backup// " 设置备份文件、交换文件、操作历史文件的保存路径  
 set directory=~/.vim/.swp//
 set undodir=~/.vim/.undo// 
